@@ -1,1 +1,1 @@
-A simple HTML/JS/CSS starter template
+A simple HTML/CSS starter template based at https://www.frontendpractice.com/ 
