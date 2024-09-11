@@ -1,34 +1,40 @@
-.hero {
+.hero-background {
     display: flex;
     justify-content: center;
-    align-items: center;
-    /*     gap: 40px; */
-    background-color: rgb(250, 235, 215);
+    background: rgb(250, 235, 215);
     font-family: "Archivo", sans-serif;
-    padding: 100px 20px;
+    padding: 100px 10px;
     border-bottom: 2px solid #000;
-    height: 650px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .hero-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
-    padding: 0 50px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .hero-info h1 {
     font-family: "DM Serif Display", "serif";
-    font-size: 57px;
-    font-weight: 700;
-    line-height: 70px;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 60px;
     text-rendering: optimizeLegibility;
 }
 
 .hero .hero-info p {
     font-size: 23px;
     line-height: 35px;
+    width: 100%;
 }
 
 .hero-links {
@@ -62,17 +68,22 @@
     color: #fff;
 }
 
-.hero-image {
-    padding: 50px 50px;
-}
-
 #img-collage {
-    width: 560px;
-    height: 100%;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    color: transparent;
 }
 
 .learn-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more {
     padding: 50px 0px;
+    max-width: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -81,7 +92,7 @@
     gap: 50px;
 }
 
-.learn-more-container>h2 {
+.learn-more>h2 {
     max-width: 650px;
     text-align: center;
     font-size: 36px;
@@ -89,7 +100,7 @@
     line-height: 45px;
 }
 
-.learn-more-container>p {
+.learn-more>p {
     font-size: 26px;
     font-family: "Archivo", sans-serif;
     text-align: center;
@@ -132,7 +143,7 @@
 }
 
 .cards {
-    max-width: 1200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -146,14 +157,16 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    max-width: 40%;
+    max-width: 450px;
+    width: 100%;
     padding: 10px;
     height: 150px;
 }
 
 .four-grid {
     border: solid 1px black;
-    max-width: 40%;
+    max-width: 450px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +177,8 @@
 
 .pallet-color {
     border: solid 1px black;
-    max-width: 40%;
+    max-width: 450px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +189,8 @@
 
 .ligthbulb {
     border: solid 1px black;
-    max-width: 40%;
+    max-width: 450px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

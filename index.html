@@ -7,19 +7,25 @@
   <title>Frontend Practice | Become a better frontend developer.</title>
   <link rel="icon" href="./assets/favicon.ico">
   </link:icon>
-  <link href='/style.css' rel='stylesheet'>
-  <link rel="stylesheet" href="style.header.css">
-  <link rel="stylesheet" href="style.main.css">
+  <link href='./assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/css/style.header.css">
+  <link rel="stylesheet" href="./assets/css/style.main.css">
+  <link rel="stylesheet" href="./assets/css/style.mediaquery.css">
 </head>
 
 <body>
-  <header>
-    <nav class="nav-bar-container">
-      <div class="nav-bar">
-        <section class="section-h1">
-          <a href="/">Frontend Practice</a>
-        </section>
-        <section class="nav-links">
+  <header class="nav-bar-container">
+    <nav class="nav-bar">
+      <section class="section-h1">
+        <a href="/">Frontend Practice</a>
+      </section>
+      <input type="checkbox" name="menu-hamburguesa" id="menu-hamburguesa-toggle">
+      <label for="menu-hamburguesa-toggle">
+        <img class="hamburguesa-icon" src="./assets/images/hamburger-menu.png" alt="menu-hamburguesa" />
+        <img class="icon-close" src="./assets/images/close.png" alt="close" />
+      </label>
+      <section class="menu-responsive">
+        <section class="nav-links-responsive">
           <a href="#">Home</a>
           <a href="#">Projects</a>
           <a href="#">Blog</a>
@@ -27,50 +33,60 @@
           <a href="#">Contact</a>
           <a href="#">Newsletter ↗</a>
         </section>
-      </div>
+      </section>
+      <section class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Blog</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+        <a href="#">Newsletter ↗</a>
+      </section>
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <section class="hero-info">
-        <h1>Become a better fronted developer.</h1>
-        <p>Take your frontend skills to the next level by recreating <strong>real websites</strong> from <strong>real
-            companies.</strong></p>
-        <p>The perfect type of practice for developers of all skill levels. Are you up for the challenge?</p>
-        <div class="hero-links">
-          <a href="#" id="a1">View Projects</a>
-          <a href="#" id="a2">Learn More</a>
-        </div>
-      </section>
-      <section class="hero-image">
+    <section class="hero-background">
+      <section class="hero">
+        <section class="hero-info">
+          <h1>Become a better frontend developer.</h1>
+          <p>Take your frontend skills to the next level by recreating <strong>real websites</strong> from <strong>real
+              companies.</strong></p>
+          <p>The perfect type of practice for developers of all skill levels. Are you up for the challenge?</p>
+          <div class="hero-links">
+            <a href="#" id="a1">View Projects</a>
+            <a href="#" id="a2">Learn More</a>
+          </div>
+        </section>
         <img id="img-collage" src="/assets/images/project-collage.webp" alt="image_collage_templates">
       </section>
     </section>
 
     <section class="learn-more-container">
-      <h2>Frontend Practice provides you with the inspiration and resources to create beautiful websites.</h2>
-      <p>Here are some ways you can benefit from using our platform:</p>
-      <section class="cards">
-        <div class="world">
-          <img src="./assets/images/world.avif" alt="globe with a search bar">
-          <p>Enhance your skills by building real websites selected for their education value.</p>
-        </div>
-        <div class="four-grid">
-          <img src="./assets/images/4-part-grid.avif" alt="4 part grid of shapes">
-          <p>Test and improve your frontend knowledge through various challenges.</p>
-        </div>
-        <div class="pallet-color">
-          <img src="./assets/images/color-pallet.avif" alt="a color palette sheet">
-          <p>Use the provided color palettes for each project to save time.</p>
-        </div>
-        <div class="ligthbulb">
-          <img src="./assets/images/ligthbulb-turnOn.avif" alt="lightbulb turning on">
-          <p>Find helpful, curated resources to tackle challenging elements.</p>
-        </div>
-      </section>
-      <section class="learn-ready">
-        <p>Ready to become a better fronted developer?</p>
-        <a href="">Get Started</a>
+      <section class="learn-more">
+        <h2>Frontend Practice provides you with the inspiration and resources to create beautiful websites.</h2>
+        <p>Here are some ways you can benefit from using our platform:</p>
+        <section class="cards">
+          <div class="world">
+            <img src="./assets/images/world.avif" alt="globe with a search bar">
+            <p>Enhance your skills by building real websites selected for their education value.</p>
+          </div>
+          <div class="four-grid">
+            <img src="./assets/images/4-part-grid.avif" alt="4 part grid of shapes">
+            <p>Test and improve your frontend knowledge through various challenges.</p>
+          </div>
+          <div class="pallet-color">
+            <img src="./assets/images/color-pallet.avif" alt="a color palette sheet">
+            <p>Use the provided color palettes for each project to save time.</p>
+          </div>
+          <div class="ligthbulb">
+            <img src="./assets/images/ligthbulb-turnOn.avif" alt="lightbulb turning on">
+            <p>Find helpful, curated resources to tackle challenging elements.</p>
+          </div>
+        </section>
+        <section class="learn-ready">
+          <p>Ready to become a better fronted developer?</p>
+          <a href="">Get Started</a>
+        </section>
       </section>
     </section>
 

@@ -1,0 +1,191 @@
+/* Por el lado del Responsive Design
+max-width en un media query aplica estilos definidos en un determinado ancho de pantalla. Este ancho de pantalla parte desde 0 hasta lo que se haya colocado en max-width. Pasado este ancho máximo todos los estilos que se hayan puesto dejan de aplicarse en la pantalla. */
+
+/* ,
+si en un media query se especifica el min-width,
+entonces todos los estilos especificados serán aplicados a partir del min-width hacia adelante. */
+
+
+@media(max-width:992px) {
+
+    .section-h1>a {
+        font-size: 25px;
+    }
+
+    .nav-links>a {
+        font-size: 18px;
+    }
+
+    .hero {
+        margin-top: 55px;
+        padding: 7px;
+    }
+
+    .hero-info {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    #img-collage {
+        max-height: 400px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #img-collage {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        width: unset;
+    }
+
+    .world,
+    .four-grid,
+    .pallet-color,
+    .ligthbulb {
+        background: rgb(250, 235, 215);
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* #region nav-bar*/
+    .nav-bar {
+        padding: 10px 16px;
+    }
+
+    .section-h1>a {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburguesa-icon {
+        display: block;
+        z-index: 1;
+        height: 35px;
+        width: auto;
+    }
+
+    .menu-responsive {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: white;
+        border-left: 2px solid #000;
+        max-width: 300px;
+        width: 100%;
+        height: 100vh;
+        padding-top: 35px;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .nav-links-responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        padding: 0px 25px;
+    }
+
+    .nav-links-responsive>a {
+        font-size: 1.6rem;
+        font-family: "Archivo", sans-serif;
+    }
+
+    .icon-close:checked~.menu-responsive {
+        display: none;
+    }
+
+    #menu-hamburguesa-toggle:checked~.menu-responsive {
+        width: 300px;
+    }
+
+    #menu-hamburguesa-toggle:checked~label .hamburguesa-icon {
+        display: none;
+    }
+
+    #menu-hamburguesa-toggle:checked~label .icon-close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        height: 30px;
+        width: auto;
+        z-index: 2;
+    }
+
+    /* #endregion */
+    /* #emdregion */
+
+    /* #region hero */
+
+    .hero-background {
+        justify-content: unset;
+        padding: 30px 10px;
+    }
+
+    .hero {
+        justify-content: unset;
+
+    }
+
+    .hero-info {
+        max-width: 600px;
+        gap: 5px;
+    }
+
+    .hero-info h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .hero .hero-info p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #img-collage {
+        display: none;
+    }
+
+    /* #endregion */
+
+    /* #region cards */
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .world,
+    .four-grid,
+    .pallet-color,
+    .ligthbulb {
+        flex-direction: column;
+        align-items: center;
+        max-width: 320px;
+        width: 100%;
+        height: 210px;
+        padding: 15px;
+        border: 2px solid #000;
+    }
+
+    .cards img {
+        height: 80px;
+        width: auto;
+    }
+
+    .cards p {
+        font-weight: 400;
+    }
+
+
+}

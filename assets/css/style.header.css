@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&display=swap');
 
-header {
-    background-color: #fff;
-    position: sticky;
+.nav-bar-container {
+    background: #fff;
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1;
-}
-
-.nav-bar-container {
     padding: 0px 16px;
     border-bottom: 2px solid #000;
+    width: 100%;
     font-family: "DM Serif Display", "serif";
 }
 
@@ -17,10 +16,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
     max-width: 1200px;
     padding: 8px 0px;
     margin: auto;
-    /* height: 60px; */
 }
 
 .section-h1>a {
@@ -50,4 +49,11 @@ a:focus {
     font-size: 1.2rem;
     font-family: "Archivo", sans-serif;
 
+}
+
+.icon-close,
+.hamburguesa-icon,
+.nav-links-responsive,
+#menu-hamburguesa-toggle {
+    display: none;
 }
