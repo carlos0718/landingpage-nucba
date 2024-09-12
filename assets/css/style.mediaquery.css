@@ -8,12 +8,17 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
 
 @media(max-width:992px) {
 
+    .nav-bar {
+        padding: unset;
+        gap: 10px;
+    }
+
     .section-h1>a {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .nav-links>a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .hero {
@@ -52,8 +57,15 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
 }
 
 @media (max-width: 767px) {
+    body {
+        max-width: 100%;
+    }
 
     /* #region nav-bar*/
+    .nav-bar-container {
+        padding-left: 20px;
+    }
+
     .nav-bar {
         padding: 10px 16px;
     }
@@ -187,5 +199,35 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
         font-weight: 400;
     }
 
+    /* #endregion */
 
+}
+
+@media(max-width:575px) {
+    body {
+        max-width: 100%;
+    }
+
+    .nav-bar-container {
+        padding: unset;
+    }
+
+    .footer-links {
+        display: none;
+    }
+}
+
+@media(max-width:390px) {
+    body {
+        max-width: 100%;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+
+    .footer-links {
+        display: none;
+    }
 }
