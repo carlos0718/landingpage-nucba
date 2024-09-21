@@ -1,0 +1,253 @@
+body {
+    min-height: 100vh;
+    font-family: Archivo, sans-serif;
+    text-rendering: optimizespeed;
+    line-height: 1.5;
+
+}
+
+/* #region project container */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.projects-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.projects-hero>h2 {
+    font-family: "DM Serif Display", "serif";
+    font-size: 72px;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+    margin: 10px 0px;
+}
+
+/* #endregion */
+
+/* #region hero */
+.hero-started {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-started-title {
+    text-align: center;
+    font-family: "DM Serif Display", "serif";
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin: 20px 0px;
+}
+
+.hero-started-select {
+    font-size: 23px;
+    margin: 5px 0px;
+}
+
+.hero-started-select>em {
+    margin: 0px 10px;
+
+}
+
+.frontend-msg {
+    padding: 5px 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.frontend-msg>span {
+    margin: 0px 10px;
+}
+
+/* #endregion */
+
+/* #region filter */
+.filter {
+    margin: 20px;
+}
+
+.filter-button {
+    margin: 10px;
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 2px solid #000;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.filter-button:active,
+.filter-button:focus {
+    outline: 2px dashed navy;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
+.viewAll {
+    color: #ffffff;
+    background: #000;
+}
+
+.level1:hover {
+    background: rgb(188, 255, 147);
+}
+
+.level2:hover {
+    background: rgb(252, 255, 116);
+}
+
+.level3:hover {
+    background: rgb(255, 212, 48);
+}
+
+.level1:focus {
+    background: rgb(188, 255, 147);
+}
+
+.level2:focus {
+    background: rgb(252, 255, 116);
+}
+
+.level3:focus {
+    background: rgb(255, 212, 48);
+}
+
+.filter-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+#search {
+    border: solid 2px #000;
+    padding: 18px 15px 15px 15px;
+    margin: 0px 10px;
+    width: 100%;
+}
+
+#search::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* #endregion */
+
+#txt-clarification {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+/* #region cards */
+.card-wrap {
+    max-width: 1600px;
+    width: 100%;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-grid-main,
+.card-grid-retired {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px;
+}
+
+.card-img {
+    position: relative;
+    border: solid 2px #000;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 450px 50px;
+    align-items: center;
+    background: antiquewhite;
+    cursor: pointer;
+}
+
+.badge-lvl1 {
+    position: absolute;
+    border: solid 2px #000;
+    padding: 5px 10px;
+    font-weight: 600;
+    background: rgb(188, 255, 147);
+    top: -10px;
+    right: -10px;
+}
+
+.badge-lvl2 {
+    position: absolute;
+    border: solid 2px #000;
+    padding: 5px 10px;
+    font-weight: 600;
+    background: rgb(252, 255, 116);
+    top: -10px;
+    right: -10px;
+}
+
+.badge-lvl3 {
+    position: absolute;
+    border: solid 2px #000;
+    padding: 5px 10px;
+    font-weight: 600;
+    background: rgb(255, 212, 48);
+    top: -10px;
+    right: -10px;
+}
+
+.card-img:hover {
+    translate: 0px -15px;
+    transition: ease-in-out 0.5s;
+}
+
+.card-img>img {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 2px #000;
+}
+
+.card-img>a {
+    text-decoration: none;
+    color: #000;
+    text-decoration: underline;
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+#subsection-subtitle {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    border-top: solid 2px #000;
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: "DM Serif Display", serif;
+}
+
+#subsection-description {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
