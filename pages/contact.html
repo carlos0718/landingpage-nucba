@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Practice | Become a better frontend developer.</title>
+    <link rel="icon" href="../assets/favicon.ico">
+    </link:icon>
+    <link href='../assets/css/style.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/style.header.css">
+    <link rel="stylesheet" href="../assets/css/contact/contact.style.css">
+    <link rel="stylesheet" href="../assets/css/style.mediaquery.css">
+</head>
+
+<body>
+    <header class="nav-bar-container">
+        <nav class="nav-bar">
+            <section class="section-h1">
+                <a href="/">Frontend Practice</a>
+            </section>
+            <input type="checkbox" name="menu-hamburguesa" id="menu-hamburguesa-toggle">
+            <label for="menu-hamburguesa-toggle">
+                <img class="hamburguesa-icon" src="../assets/images/hamburger-menu.png" alt="menu-hamburguesa" />
+                <img class="icon-close" src="../assets/images/close.png" alt="close" />
+            </label>
+            <section class="menu-responsive">
+                <section class="nav-links-responsive">
+                    <a href="../index.html">Home</a>
+                    <a href="./pages/projects.html">Projects</a>
+                    <a href="#">Blog</a>
+                    <a href="./pages/faq.html">FAQ</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Login ↗</a>
+                </section>
+            </section>
+            <section class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Blog</a>
+                <a href="./pages/faq.html">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Login ↗</a>
+            </section>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="contact">
+            <h1>Contact us.</h1>
+            <p id="info">You may find that our <b> <u>FAQ page</u></b> has the answers that you are a looking for. If
+                not, feel free to
+                reach
+                out!</p>
+            <form class="form-contact">
+                <label for="name" class="label-title">Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Code" required>
+                <label for="email" class="label-title">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@website.com" required>
+                <label for="message" class="label-title">Message</label>
+                <textarea id="message" name="message" placeholder="What would you like to say?" required></textarea>
+                <button type="submit" id="btn-submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-info">
+            <h2>Frontend Practice - © 2024 </h2>
+        </section>
+        <section class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="./pages/projects.html">Projects</a>
+            <a href="#">Blog</a>
+            <a href="./pages/faq.html">FAQ</a>
+            <a href="./contact.html">Contact</a>
+            <a href="#">Login ↗</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

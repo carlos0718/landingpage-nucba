@@ -1,0 +1,78 @@
+body {
+    background: antiquewhite;
+    font-family: Archivo, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 25px 35px;
+    gap: 35px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: "DM Serif Display", serif;
+    line-height: 1.1;
+    text-rendering: optimizeLegibility;
+}
+
+#info {
+    max-width: 500px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    padding: 0px 10px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label-title {
+    font-weight: bold;
+}
+
+#name,
+#email {
+    height: 45px;
+    border: solid 1px #000;
+}
+
+#message {
+    height: 250px;
+    border: solid 1px #000;
+}
+
+#name::placeholder,
+#email::placeholder,
+#message::placeholder {
+    font-size: 16px;
+    padding: 20px 15px;
+    font-family: Archivo, sans-serif;
+}
+
+#btn-submit {
+    background: #fff;
+    width: 150px;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
