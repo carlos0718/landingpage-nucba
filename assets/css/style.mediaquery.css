@@ -4,10 +4,58 @@ max-width en un media query aplica estilos definidos en un determinado ancho de 
 /* ,
 si en un media query se especifica el min-width,
 entonces todos los estilos especificados serán aplicados a partir del min-width hacia adelante. */
+@media (max-width: 1200px) {
 
+    /* #region project */
+    .card-grid-main,
+    .card-grid-retired {
+        padding: 0px 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 30px;
+    }
+
+    .card-img {
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 50px;
+    }
+
+    /* #endregion */
+
+    /* #region nav-bar */
+    /* #endregion */
+
+    /* #region login */
+    .login-container {
+        min-height: 100vh;
+    }
+
+    .image-login img {
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 30px 35px;
+    }
+
+    .login-social-media {
+        padding-top: 40px;
+    }
+
+    /* #endregion */
+
+    /* #region login */
+    .login-container {
+        min-height: calc(110vh - 310px);
+    }
+
+    /* #endregion */
+
+}
 
 @media(max-width:992px) {
 
+    /*#region nav-bar*/
     .nav-bar {
         padding: unset;
         gap: 10px;
@@ -21,6 +69,9 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
         font-size: 16px;
     }
 
+    /* #endregion */
+
+    /* #region hero */
     .hero {
         margin-top: 55px;
         padding: 7px;
@@ -41,6 +92,9 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
         width: 100%;
     }
 
+    /* #endregion */
+
+    /* #region card home */
     .cards {
         flex-direction: column;
         width: unset;
@@ -54,9 +108,34 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
         max-width: 500px;
     }
 
+    /* #endregion */
+
+    /* #region projects*/
+    .card-grid-main,
+    .card-grid-retired {
+        padding: 0px 20px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 30px;
+    }
+
+    .card-img {
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 50px;
+    }
+
+    /* #endregion */
+
+    /* #region login */
+    .login-container {
+        min-height: calc(110vh - 290px);
+    }
+
+    /* #endregion */
+
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body {
         max-width: 100%;
     }
@@ -201,9 +280,37 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
 
     /* #endregion */
 
+    /* #region projects */
+    .card-grid-main,
+    .card-grid-retired {
+        gap: 20px;
+    }
+
+    .card-wrap {
+        padding: 0px 10px;
+    }
+
+    /* #endregion */
+
+    /* #region login */
+    .login-container {
+        min-height: calc(110vh - 200px);
+    }
+
+    .image-login,
+    #line-division {
+        display: none;
+    }
+
+    .form-container {
+        margin: 100px 0px;
+    }
+
+    /* #endregion */
+
 }
 
-@media(max-width:575px) {
+@media(max-width:576px) {
     body {
         max-width: 100%;
     }
@@ -215,6 +322,69 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
     .footer-links {
         display: none;
     }
+
+    /* #region project */
+    .projects-hero {
+        padding: 0 20px;
+    }
+
+    .projects-hero h2 {
+        font-size: 2.7rem;
+    }
+
+    .hero-started-select,
+    .frontend-msg {
+        font-size: 1.2rem;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btns-filter {
+        max-width: 300px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filter-button {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    #search::placeholder {
+        font-size: 19px;
+    }
+
+    #txt-clarification {
+        font-size: 18px;
+        padding: 0px 25px;
+    }
+
+    .card-wrap {
+        width: 95%;
+    }
+
+    .card-grid-main,
+    .card-grid-retired {
+        width: 100%;
+        grid-template-rows: repeat(auto-fill, minmax(450px, 1fr));
+    }
+
+    .card-img {
+        grid-template-rows: 400px 50px;
+    }
+
+    #subsection-description {
+        padding: 0px 25px;
+        margin-top: 25px;
+    }
+
+    /* #endregion */
 }
 
 @media(max-width:390px) {
@@ -226,8 +396,20 @@ entonces todos los estilos especificados serán aplicados a partir del min-width
         max-width: 100%;
     }
 
-
     .footer-links {
         display: none;
     }
+
+    /* #region project */
+    .card-wrap {
+        width: 100%;
+    }
+
+    .card-grid-main,
+    .card-grid-retired {
+        width: 90%;
+        grid-template-rows: repeat(auto-fill, minmax(450px, 1fr));
+    }
+
+    /* #endregion */
 }
